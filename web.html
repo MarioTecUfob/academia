@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset= "UTF-8"/>
+<title>projeto do curso</title>
+<link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+
+
+</head>
+<script>
+function mudaFoto(foto)
+{
+document.getElementById("icone").src = foto;
+}
+</script>
+<body>
+<div id="reponsivo"></div>
+<div id="interface">
+<header id="cabecalho">
+<hgroup>
+<h1><br/>Academia Vem Monstro</h1>
+<h2> Você pode ser muito feio, mas se você treinar <br/>continuará sendo feio, mas será um feio feliz</h2> 
+</hgroup>
+
+<img  id="icone" src="_imagens/hulk.png" width="200"/>
+<nav id="menu">
+<h1>Menu Principal</h1>
+<div class="reponsivo"></div>
+<ul type="circle">
+<li onmouseover ="mudaFoto('_imagens/hulk.png')"onmouseout ="mudaFoto('_imagens/hulk.png')"><a href="web.html">Início</a></li>
+<li onmouseover ="mudaFoto('_imagens/arte.jpg')"onmouseout ="mudaFoto('_imagens/hulk.png')"><a href="artes.html">Artes Marciais</a></li>
+<li onmouseover ="mudaFoto('_imagens/dan.jpg')"onmouseout ="mudaFoto('_imagens/hulk.png')"><a href="danca.html">Dança</a></li>
+<li onmouseover ="mudaFoto('_imagens/mus.jpg')"onmouseout ="mudaFoto('_imagens/hulk.png')"><a href="musculacao.html">Musculação<a/></li>
+<li onmouseover ="mudaFoto('_imagens/pilates.png')"onmouseout ="mudaFoto('_imagens/hulk.png')"><a href="pilates.html">Pilates</a></li>
+<li onmouseover ="mudaFoto('_imagens/mat.png')"onmouseout ="mudaFoto('_imagens/hulk.png')"><a href="matricula.html">Matrícula</a></li>
+</ul>
+</nav>
+</header>
+
+<hgroup>
+<h3>Musculação > &nbsp; Artes Marciais</h3>
+<h1>Cuide Mais De Você</h1>
+<h2>Equipe: Eric Efrem, Jairo Martins, Mário Aparecido, Mateus Ribeiro e Isael Pereira </h2>
+<h3>Atualizado em 01/Outubro/2018</h3>
+</hgroup>
+<h3>Marcar Reagendamento De Aula</h3>
+<input type="button" value="Reagendar Aula" onclick="javascript: location.href='reagendaraula.php';" />
+<h2>Sobre a Academia</h2>
+<p>A <span style ="font-weight:800;"> Academia Vem Monstro</span> localizada em Serra Do Ramalho Agrovila02 Rua C N° 208. É o melhor local para você ficar saudavél, musculoso e lindo com o corpo que você deseja, cuidar da saude nunca é demais</p>
+<figure class="foto-legenda">
+<img src="_imagens/local.png"/>
+<figcaption> 
+<h2>Vem Se Cuidar</h2>
+<h3><p>Não Deixe De Fazer Uma Visita.</p></h3>
+<figcaption>
+</figure>
+<h1>O que você pode fazer na Academia Vem Mostro</h1>
+
+
+<ul id="album">
+<li id="foto1"><span>Zumba- Venha ficar fitnes</span></li> 
+<li id="foto2"><span>Pilates- Venha aliviar suas dores</span></li>
+<li id="foto3"><span>Musculação- Seja forte e gostoso</span></li>
+<li id="foto4"><span>Jiu-Jitsu- Aprenda a se defender</span></li>
+<li id="foto5"><span>Taekwondo- a Arte de Voar</span></li>
+<li id="foto6"><span>Balé- Beleza e Suavidade</span></li>
+</ul><br/><br/><br/><br/>
+
+
+
+
+<table id="profi">
+<caption>Tabela De Profisionais</caption>
+<tr><td class="ce">Nome Do Profissional</td><td class="cd">Formação</td></tr>
+<tr><td>Isael Pereira</td>
+<td>Pilates</td>
+</tr> 
+<tr>
+<td>Jairo Martins</td>
+<td>Educação Física </td></tr>
+<tr><td>Eric Efrem</td>
+<td> Mestre de Jiu-jitsu</td></tr>
+<tr><td>Mateus Ribeiro</td><td>
+ Zumba e Balé Clássico</td></tr>
+<tr><td>Mário Aparecido</td>
+<td>Professor de Taekwondo</td></tr>
+</table>
+
+<h1>Como funciona</h1>
+<p>Para treinar na academia Vem Monstro você Precisa ir no menu de inscrição fazer a sua maticula e verifica se você tem disponibilidade de tempo.</p>
+
+<table id="profi">
+<caption>Horário Das Aulas </caption>
+<tr>
+<td>Hora</td> 
+<td>Segunda</td>
+<td>Terça </td>
+<td>Quarta</td> 
+<td>Quinta</td>
+<td>Sexta </td> 
+<td>Sábado </td> 
+</tr> 
+
+<tr>
+<td>06:30 - 08:30</td> 
+<td>Taewondo</td>
+<td>Balé Clássico</td>
+<td>Taekwondo</td> 
+<td>Balé Clássico</td>
+<td>Taekwondo</td> 
+<td>Balé Clássico</td>
+</tr> 
+
+<tr>
+<td>18:00 - 20:00</td> 
+<td>Musculação</td>
+<td>Plates</td>
+<td>Musculação</td> 
+<td>Pilates</td>
+<td>Musculação</td> 
+<td>Pilates</td> 
+</tr> 
+
+<tr>
+<td>20:30 - 22:30</td> 
+<td>Jiu-Jitsu</td>
+<td>Zumba</td>
+<td>Jiu-Jitsu</td> 
+<td>Zumba</td>
+<td>Jiu-Jitsu</td> 
+<td>Zumba</td> 
+</tr> 
+</table></br>
+
+<footer id="rodape">
+<p>Instituto Federal de Educação, Ciência e Tecnologia Baiano, Campus Bom Jesus da Lapa<br>
+Professor: Marcelo West</br>Matriz Curricular: Programação Web<br/> Data: 09/10/2018</p>
+</footer>
+</div>
+</body>
+</html>

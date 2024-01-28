@@ -1,0 +1,13 @@
+@charset "UTF-8";
+*{
+	margin: 0px;
+	padding: 0px;
+	
+}
+header#responsivo {
+	position: relative;
+	width:1350px:
+	margin:0 auto;
+	height: 500px;
+	
+}

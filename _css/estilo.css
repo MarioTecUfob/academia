@@ -1,0 +1,287 @@
+@charset "UTF-8";
+body {
+	background-color:#dddddd; /*Deixa o fundo da página na cor cinza*/
+	color: rgba (0,0,0,1);
+}
+div#interface { /*Formatando a interface*/
+	width:900px;
+	background-color:#ffffff; /*Margem branca*/
+	margin: -20px auto 10px auto;  /*Centraliza a Margem do corpo-texto*/
+	box-shadow: 10px 10px 10px rgba(0,0,0,.5);
+	padding: 10px;
+	
+}
+p {
+text-align: justify;
+text-indent:50px;
+}
+header#cabecalho img#icone{ /*Definindo um local para a imagem do hulk*/
+	position: absolute;
+	left:760px;
+	top:70px;
+}
+header#cabecalho{
+	border-bottom: 1px #606060 solid;
+	height: 150px;
+			
+}
+header#cabecalho h1/*formatando fontes H1 do cabecalho*/ {
+	font-family: Arial, sans-serif;
+	font-size: 30pt;
+	color:red;
+	text-shadow:1px 1px 1px rgba(0,0,0,.6);
+	padding:0px;
+	margin-bottom: 0px;
+}
+header#cabecalho h2{
+	font-family: Arial, sans-serif;
+	font-size: 15pt;
+	color:#888888;
+	padding:0px;
+	margin-top:0px;
+}
+/*Formatação de Imagem com Legendas*/
+figure.foto-legenda {
+	position: relative;
+	border:8px solid wite;
+	box-shadow: 1px 1px 1px black;
+}
+figure.foto-legenda img {
+	width: 100%;
+	height: 100%;
+}
+figure.foto-legenda figcaption {
+	opacity:0;
+	position: absolute;
+	top:0px;
+	background-color: rgba(0,0,0,.4);
+	color: white;
+	width: 100%;
+	height:100%;	
+	padding:10px;
+	box-sizing: border-box;
+	transition: opacity 2s;
+	}
+	figure.foto-legenda:hover figcaption {
+		opacity:1;
+	}
+	
+	ul#album {
+		width: 700px;
+		margin: 0 auto;
+		padding: 50px;
+		overflow: hedden; /*Ver o que isso faz*/
+		list-style: none;
+		margin-bottom: 10px;
+		
+	}
+	ul#album li {
+		float:left;
+		width: 200px;
+		height: 200px;
+		margin: 10px;
+		border: 5px solid #ffffff;
+		background-color: #ffffff;
+		box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+		-webkit-transition: all .5s ease-in;
+	}
+	ul#album li span{
+		opacity: 0;
+		color: #ffffff;
+		text-shadow: 1px 1px 1px #000000;
+		background-color: rgba (0,0,0,.5);
+		font-size: 14px;
+		line-height: 370px;
+		padding: 5px;
+	}
+	
+	ul#album li:hover {
+		-webkit-transform: scale(1.5);
+		
+	}
+	ul#album li:hover span {
+		opacity: 1;
+		
+	}
+	
+	ul#album li#foto1 {
+		background: url('../_imagens/z.gif') no-repeat;
+		background-position: 50% 50%;
+		background-size: 360px 240px;
+		background-color:#ffffff;
+		
+	}
+	ul#album li#foto1:hover {
+		background-position: 0px 0px;
+		background-size: 200px 200px;
+	}
+	ul#album li#foto2 {
+		background: url('../_imagens/p.gif') no-repeat;
+		background-position: 50% 50%;
+		background-size: 320px 240px;
+		background-color:#ffffff;
+	}
+	ul#album li#foto2:hover {
+		background-position: 0px 0px;
+		background-size: 200px 200px;
+	}
+	
+		
+	ul#album li#foto3 {
+		background: url('../_imagens/muscu.gif') no-repeat;
+		background-position: 50% 50%;
+		background-size: 309px 300px;
+		background-color:#ffffff;
+	}
+	ul#album li#foto3:hover {
+		background-position: 0px 0px;
+		background-size: 200px 200px;
+	}
+	ul#album li#foto4 {
+		background: url('../_imagens/jiu.gif') no-repeat;
+		background-position: 50% 50%;
+		background-size: 440px 330px;
+		background-color:#ffffff;
+	}
+	ul#album li#foto4:hover {
+		background-position: 0px 0px;
+		background-size: 200px 200px;
+	}
+	ul#album li#foto5 {
+		background: url('../_imagens/tkd.gif') no-repeat;
+		background-position: 50% 50%;
+		background-size: 299px 227px;
+		background-color:#ffffff;
+	}
+	ul#album li#foto5:hover {
+		background-position: 0px 0px;
+		background-size: 200px 200px;
+	}
+	ul#album li#foto6 {
+		background: url('../_imagens/ba.gif') no-repeat;
+		background-position: 50% 50%;
+		background-size: 293px 220px;
+		background-color:#ffffff;
+	}
+	ul#album li#foto6:hover {
+		background-position: 0px 0px;
+		background-size: 200px 200px;
+	}
+	/*Formatçaõ Do Menu*/
+	nav#menu {
+		display: block;
+	}
+	nav#menu ul {
+		list-style: none; 
+		text-transform: uppercase;
+		position: absolute;
+		top: -20px;
+		left: 260px;
+	}
+	nav#menu li {
+		display: inline-block;
+		background-color:#dddddd;
+		padding:10px;
+		margin:2px;
+		transition: background-color 1s; 
+	}
+	nav#menu li:hover {                       /* Efeito ao passar o cursor so mause sobre o item */
+		background-color:#606060;
+	}
+	nav#menu h1 {
+		display:none;
+	}
+	nav#menu a {
+		color:#000000;
+		text-decoration: none;
+	}
+	nav#menu a:hover{
+		color:#ffffff;
+		text-decoration:underline; /*Adiciona o edeito de link*/
+	}
+	
+	table#profi{
+	border: 1px solid #606060;
+	border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+	table#profi td {
+	border: 1px solid #606060;
+	padding: 10px;
+	text-align: center;
+	
+}
+table#profi td.ce {
+	color:#111111;
+	background-color:#f7ff00;
+	text-align:center;
+}
+
+table#profi td.cd {
+	color:#111111;
+	background-color:#f7ff00;
+	text-align:center;
+
+}
+table#profi caption {
+	color:#888888;
+	font-size:20px;
+	font-weight:bolder;
+}
+
+footer#rodape{
+clear:both;
+border-top: 1px solid #606060;
+margin-top: 15px;
+}
+footer#rodape p {
+text-align: center;
+
+}
+/*Formatando o formulário*/
+form {
+	width: 700px;
+	margin: auto;
+}
+input {
+	font-family: sans-serif;
+	font-weight: normal;
+	font-size: 13px;
+}
+input:hover {
+	background-color: #dddddd;
+}
+legend {
+	color: #888888;
+	font-weight: bold;
+	font-size: 13pt;
+	font-family: sans-serif;
+}
+fieldset {
+	border-color: #cecece;
+	margin: 20px;
+}
+fieldset#usuario {
+	background: url("../_imagens/icone-contato.png") no-repeat 95% 95%;
+}
+fieldset#endereco {
+		background: url("../_imagens/icone-endereco.png") no-repeat 95% 95%;
+}
+fieldset#mensagem {
+		background: url("../_imagens/icone-mensagem.png") no-repeat 103% 103%;
+}
+
+fieldset#fazer {
+		background: url("../_imagens/icone-servicos.png") no-repeat 95% 95%;
+}
+
+/*Responsivo*/
+
+header#responsivo {
+	position: relative;
+	width:1350px:
+	margin:0 auto;
+	height: 500px;
+	
+}

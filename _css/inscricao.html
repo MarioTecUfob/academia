@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset= "UTF-8"/>
+<title>projeto do curso</title>
+<link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+<script>
+function gravar(){
+open("gravar.php")
+}
+
+function validar() {
+
+var nome=frmprojeto.cNome.value;
+ 
+var cpf=frmprojeto.cCpf.value; 
+
+var rg=frmprojeto.cRg.value; 
+
+var email=frmprojeto.cMail.value; 
+
+var rua=frmprojeto.cRua.value;
+
+var cidade=frmprojeto.cCid.value; 
+
+var cep=frmprojeto.cCep.value; 
+
+var num=frmprojeto.cNum.value; 
+
+ 
+
+if (nome=="") {
+alert ("Preencha o campo Nome");
+frmprojeto.cNome.focus();
+return false;
+}
+
+
+if (cpf=="") {
+alert ("Preencha o campo CPF");
+frmprojeto.cNome.focus();
+return false;
+}
+
+
+
+if (rg=="") {
+alert ("Preencha o campo RG");
+frmprojeto.cRua.focus();
+return false;
+}
+
+
+if (email=="") {
+alert ("Preencha o campo e-mail");
+frmprojeto.cMail.focus();
+return false;
+}
+
+
+if (rua=="") {
+alert ("Preencha o campo Rua");
+frmprojeto.cRua.focus();
+return false;
+}
+
+
+
+if (cidade=="") {
+alert ("Preencha o campo Cidade");
+frmprojeto.cCid.focus();
+return false;
+}
+
+
+if (cep=="") {
+alert ("Preencha o campo Nome");
+frmprojeto.cCep.focus();
+return false;
+}
+
+
+if (num=="") {
+alert ("Preencha o campo Número");
+frmprojeto.cNum.focus();
+return false;
+}
+
+}
+
+function cal(){
+//var qtd = parseInt(document.getElementById('fazer').value);
+//tot = 0;
+//qtd = 0;
+tot = qtd+50;
+var kd  = parseInt(document.getElementById('aulacTkd').value);
+alert("chegou aqui");
+
+var aula  = parseInt(document.getElementById('aulacJiu').value); 
+var aulacMus  = parseInt(document.getElementById('aulacMus').value);
+var aulacPil  = parseInt(document.getElementById('aulacPil').value);
+var aulacZum  = parseInt(document.getElementById('aulacZum').value);
+var aulacBale = parseInt(document.getElementById('aulacBale').value);
+
+
+
+  if (aulacTkd.checked) {
+		qtd++;
+    } else if  (aulacJiu.checked) { 
+		qtd++;
+	} else if  (aulacMus.checked) { 
+		qtd++;
+	} else if  (aulacPil.checked) { 
+		qtd++;
+	} else if  (aulacZum.checked) { 
+		qtd++;
+	} else if  (aulacBale.checked) { 
+		qtd++;}
+	tot = 50*qtd;
+    document.getElementById('cTot').value = tot;	
+}
+
+</script>
+</head>
+<body>
+<h1>Ficha De Inscrição</h1>
+
+
+<form name="frmprojeto" method="post" action="gravar.php" >
+
+<fieldset id="usuario"><legend>Identificação do Cliente</legend>
+    <p><label for="cNome">Nome:<input type="text" name="nome" id= "nome" size="35" maxlength="35" placeholder="Nome Completo"/></label></p>
+	
+    <p><label for="cCpf">CPF:<input type="cpf" name="cpf" id= "cpf" size="11" maxlength="11"</label></p>
+	
+	<p><label for="rg">RG: <input type="rg" name="tRg" id="cRg" size="10" maxlength="10" /></label></p></div><p>
+	
+    <p><label for="cMail">E-mail:<input type="email" name="tMail" id= "cMail" size="35" maxlength="40"</label></p>
+	
+    <legend id="sexo">Sexo:</legend>
+        <input type="radio" name="tSexo"id= "cMasc"/> <label for="cMasc">Masculino</label><br/></br>
+		
+        <input type="radio" name="tSexo" id= "cFem"/> <label for="cFem">Feminino</label>
+
+    <p><label for="cData">Data de Nascimento:<input type="date" name="tData"id= "cData"/></label></p>
+	
+</fieldset>
+
+<fieldset id="endereco"><legend>Endereço do Cliente</legend>
+    <p><label for="cRua">Logradouro: <input type="text" name="tRua" id= "cRua" size="40" maxlength="80" placeholder="Rua, Bairro,Avenida,Traavessa"/></label></p>
+	
+    <p><label for="cNum">Número:<input type="number" name="tNum" id= "cNum" min="0" max="1000"</label></p>
+	
+    <p><label for="cEst">Estado:</label>
+<select name="tEst" id="cEst">
+<option value="BA">Bahia</option>
+<optgroup label="Região Sudeste">
+<option value="RJ">Rio De Janeiro</option>
+<option value="SP">São Paulo</option>
+<option value="MG">Minas Gerais</option>
+</optgroup>
+
+<optgroup label="Região Sul">
+<option value="PR">Paraná</option>
+<option value="SC">Santa Catarina</option>
+<option value="RS">Rio Grande Do Sul</option>
+</optgroup>
+<select></p>
+    <p><label for="cCid">Cidade:</label><input type="text" name="tCid" id= "cCid" size="40" maxlength="40" placeholder="Sua Cidade" list="cidades"/></p>
+<datalist id="cidades">
+<option value "Rio De Janeito"></option>
+<option value "Nova Iguacu"></option>
+<option value "Niteroi"></option>
+<option value "Belford Roxo"></option>
+</datalist>
+<p><label for="cep">CEP:<input type="cep" name="tCep" id="cCep" size="8" maxlength="8" /></label></p>
+</fieldset>
+
+<fieldset id="fazer"> <legend>O Que Você Deseja Fazer?</legend>
+
+<p><input type="checkbox" name="aulacTkd" id="cTkd" value="tkd"/><label for="cTkd" onclick=cal()>Taekwondo</label></p>
+<p><input type="checkbox" name="aulacJiu" id="cJiu" value="jiu"/><label for="cJiu">Jiu-Jitsu</p>
+<p><input type="checkbox" name="aulacMus" id="cMus" value="mus"/><label for="cMus">Musculação</label></p>
+<p><input type="checkbox" name="aulacPil" id="cPil" value="pilates"/><label for="cPil">Pilates</label></p>
+<p><input type="checkbox" name="aulacZum" id="cZum" value="zum"/><label for="cZum">Zumba</label></p>
+<p><input type="checkbox" name="aulacBale" id="cBale" value="bal"/><label for="cBale">Balé</label></p>
+
+
+<p><label for ="cTot"> Preço R$</label>
+<input type="text" name="tTot" id= "cTot" placeholder="Total a Pagar" readonly/>
+</p>
+
+</fieldset>
+
+<fieldset id="mensagem"><legend>Possui Algum Problema De Saúde?</legend>
+<input type="radio" name="tSau"id= "cSim"/> <label for="cSim">SIM</label><br/>
+<input type="radio" name="tSau" id= "cNao"/> <label for="cNao">NÂO</label><br/>
+<input type="radio" name="tSau" id= "cOut"/> <label for="cOut">OUTROS</label><br/>
+
+
+    <p>Espercifique:</p>
+    <p><label for="cMsg">Mensagem:</label>
+<textarea name="tMsg" id=Msg cols="45" rows="5" placeholder=" Caso a Resposta Seja SIM ou OUTROS Espercifique aqui"/></textarea></p>
+<button type="submit">Enviar sua mensagem</button>
+</fieldset>
+<input type="image" onclick="return gravar()" src="_imagens/botao-enviar.png"/>
+<input type="image" onclick="return validar()" src="_imagens/botao-enviar.png"/>
+
+
+
+
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset= "UTF-8"/>
+<title>projeto do curso</title>
+<link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+</head>
+<script>
+function mudaFoto(foto)
+{
+document.getElementById("icone").src = foto;
+}
+</script>
+<body>
+<div id="interface">
+<header id="cabecalho">
+<hgroup>
+<h1><br/>Academia Vem Monstro</h1>
+<h2> Você pode ser muito feio, mas se você treinar <br/>continuará sendo feio, mas será um feio feliz</h2> 
+</hgroup>
+
+<img  id="icone" src="_imagens/hulk.png" width="200"/>
+<nav id="menu">
+<h1>Menu Principal</h1>
+<ul type="circle">
+<li onmouseover ="mudaFoto('_imagens/hulk.png')"onmouseout ="mudaFoto('_imagens/arte.jpg')"><a href="web.html">Início</a></li>
+<li onmouseover ="mudaFoto('_imagens/arte.jpg')"onmouseout ="mudaFoto('_imagens/arte.jpg')"><a href="artes.html">Artes Marciais</a></li>
+<li onmouseover ="mudaFoto('_imagens/dan.jpg')"onmouseout ="mudaFoto('_imagens/arte.jpg')"><a href="danca.html">Dança</a></li>
+<li onmouseover ="mudaFoto('_imagens/mus.jpg')"onmouseout ="mudaFoto('_imagens/arte.jpg')"><a href="musculacao.html">Musculação<a/></li>
+<li onmouseover ="mudaFoto('_imagens/pilates.png')"onmouseout ="mudaFoto('_imagens/arte.jpg')"><a href="pilates.html">Pilates</a></li>
+<li onmouseover ="mudaFoto('_imagens/mat.png')"onmouseout ="mudaFoto('_imagens/arte.jpg')"><a href="matricula.html">Matrícula</a></li>
+</ul>
+</nav>
+</header>
+<hgroup>
+<h3>Musculação > &nbsp; Artes Marciais</h3>
+<h1>Cuide Mais De Você</h1>
+<h2>Equipe: Eric Efrem, Jairo Martins, Mário Aparecido, Mateus Ribeiro e Isael Pereira </h2>
+<h3>Atualizado em 01/Outubro/2018</h3>
+</hgroup>
+<h1>Um Pouco De Informação</h1>
+<p>Artes marciais são um conjunto de técnicas de luta individual
+As primeiras artes marciais surgiram no Extremo Oriente e inicialmente representavam técnicas para
+ manejarem armas brancas. As artes marciais também envolvem processos de defesa pessoal com ou sem armas, o que 
+ explica o nome marciais ou guerreiras. Mais tarde, as artes marciais se transformaram em atividades esportivas, 
+ que tinham como objetivo aperfeiçoar o corpo e a mente. As técnicas aprendidas como esporte podem ser usadas no 
+ âmbito da defesa pessoal.</p>
+
+<p>As artes marciais podem ser contempladas em várias vertentes. Como forma de exercício físico, elas 
+potenciam o desenvolvimento equilibrado de todas as partes do corpo, a flexibilidade das articulações, a
+ postura correta da coluna vertebral, o controle da respiração, o relaxamento e fortalecimento dos músculos. A prática de 
+ artes marciais ajuda no equilíbrio, e permite alcançar disciplina e desenvolver reflexos.</p>
+
+<p>São um eficaz processo de formação moral, e impulsionam a capacidade física
+ e mental, ajudando a obter domínio próprio, coragem, honra, lealdade, modéstia e bondade. Nos dias de hoje 
+ as artes marciais são praticadas como esporte de massas e também no contexto da alta competição, como é o caso 
+ do judô e caratê. Em muitos casos, as artes marciais não contemplam o uso de armas ou acessórios. No entanto, o kendo e o kobudo, por exemplo, 
+ são praticados com armas brancas.</p>
+
+<p>As artes marciais chinesas, coreanas, indonésias e japonesas são aquelas que atingiram um maior nível de aperfeiçoamento e reconhecimento mundial.
+
+No Japão a luta existe há muitos anos. Alguns historiadores acreditam que foram as 
+artes marciais que decidiram em 859 qual dos dois filhos do imperador Buntoku 
+subiria ao trono. A partir de 1200 os samurais, guerreiros por excelência, desenvolveveram várias técnicas de combate
+ corpo-a-corpo que tinham como objetivo vencer o adversário mesmo quando não tinham armas em sua posse.</p>
+
+<footer id="rodape">
+<p>Instituto Federal de Educação, Ciência e Tecnologia Baiano, Campus Bom Jesus da Lapa<br>
+Matriz Curricular: Programação Web<br/> Professor: Marcelo West</br> Data: 09/10/2018</p>
+</footer>
+</div>
+</body>
+</html>

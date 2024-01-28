@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset= "UTF-8"/>
+<title>projeto do curso</title>
+<link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+<script>
+function validar() {
+   var cTkd = document.getElementById("cTkd");  
+  var cJiu = document.getElementById("cJiu");  
+  var cMus = document.getElementById("cMus");  
+  var cPil = document.getElementById("cPil");  
+  var cZum = document.getElementById("cZum");  
+  var cBale = document.getElementById("cBale");  
+  
+ var qtd  = 0;
+ var tot  = 0;
+   
+ if (cTkd.checked) {
+		document.getElementById('valorcTkd').value = "1"; 	
+        qtd = qtd + 1;
+    } else { 
+		document.getElementById('valorcTkd').value = "0"; 	
+	}
+
+if (cJiu.checked) {
+		document.getElementById('valorcJiu').value = "1"; 	
+		qtd = qtd + 1;		
+    } else { 
+		document.getElementById('valorcJiu').value = "0"; 	
+	}
+
+if (cMus.checked) {
+		document.getElementById('valorcMus').value = "1"; 	
+		qtd = qtd + 1;		
+    } else { 
+		document.getElementById('valorcMus').value = "0"; 	
+	}
+	
+if (cPil.checked) {
+		document.getElementById('valorcPil').value = "1"; 
+		qtd = qtd + 1;		
+    } else { 
+		document.getElementById('valorcPil').value = "0"; 	
+	}
+	
+if (cZum.checked) {
+		document.getElementById('valorcZum').value = "1"; 	
+		qtd = qtd + 1;		
+    } else { 
+		document.getElementById('valorcZum').value = "0"; 	
+	}
+	
+if (cBale.checked) {
+		document.getElementById('valorcBale').value = "1"; 	
+		qtd = qtd + 1;		
+    } else { 
+		document.getElementById('valorcBale').value = "0"; 	
+	}	
+	
+var nome=frmprojeto.cNome.value;
+ 
+var cpf=frmprojeto.cCpf.value; 
+
+var rg=frmprojeto.cRg.value; 
+
+var email=frmprojeto.cMail.value; 
+
+var rua=frmprojeto.tRua.value;
+
+var cidade=frmprojeto.tCid.value; 
+
+var cep=frmprojeto.tCep.value; 
+
+var num=frmprojeto.cNum.value; 
+
+var bar=frmprojeto.tBar.value; 
+
+if (nome=="") {
+alert ("Preencha o campo Nome");
+frmprojeto.cNome.focus();
+return false;
+}
+
+
+if (cpf=="") {
+alert ("Preencha o campo CPF");
+frmprojeto.cCpf.focus();
+return false;
+}
+
+
+
+if (rg=="") {
+alert ("Preencha o campo RG");
+frmprojeto.cRg.focus();
+return false;
+}
+
+
+if (email=="") {
+alert ("Preencha o campo e-mail");
+frmprojeto.cMail.focus();
+return false;
+}
+
+if (cep=="") {
+alert ("Preencha o campo CEP");
+frmprojeto.tCep.focus();
+return false;
+}
+if (rua=="") {
+alert ("Preencha o campo Rua");
+frmprojeto.tRua.focus();
+return false;
+}
+if (num=="") {
+alert ("Preencha o campo Número");
+frmprojeto.cNum.focus();
+return false;
+}
+
+if (bar=="") {
+alert ("Informe o Bairro");
+frmprojeto.tBar.focus();
+return false;
+}
+
+if (cidade=="") {
+alert ("Preencha o campo Cidade");
+frmprojeto.tCid.focus();
+return false;
+}
+
+if (qtd==0) {
+alert ("É obrigatório ao menos marcar um serviço!!!");
+frmprojeto.cTkd.focus();
+return false;
+}	
+
+tot = qtd * 50;
+document.getElementById('total').value = tot; 	
+
+}
+
+function totalizar() {
+
+  var cTkd = document.getElementById("cTkd");  
+  var cJiu = document.getElementById("cJiu");  
+  var cMus = document.getElementById("cMus");  
+  var cPil = document.getElementById("cPil");  
+  var cZum = document.getElementById("cZum");  
+  var cBale = document.getElementById("cBale");  
+  
+ var qtd  = 0;
+ var tot  = 0;
+   
+ if (cTkd.checked) {
+		document.getElementById('valorcTkd').value = "1"; 	
+        qtd = qtd + 1;
+    } else { 
+		document.getElementById('valorcTkd').value = "0"; 	
+	}
+
+if (cJiu.checked) {
+		document.getElementById('valorcJiu').value = "1"; 	
+		qtd = qtd + 1;		
+    } else { 
+		document.getElementById('valorcJiu').value = "0"; 	
+	}
+
+if (cMus.checked) {
+		document.getElementById('valorcMus').value = "1"; 	
+		qtd = qtd + 1;		
+    } else { 
+		document.getElementById('valorcMus').value = "0"; 	
+	}
+	
+if (cPil.checked) {
+		document.getElementById('valorcPil').value = "1"; 
+		qtd = qtd + 1;		
+    } else { 
+		document.getElementById('valorcPil').value = "0"; 	
+	}
+	
+if (cZum.checked) {
+		document.getElementById('valorcZum').value = "1"; 	
+		qtd = qtd + 1;		
+    } else { 
+		document.getElementById('valorcZum').value = "0"; 	
+	}
+	
+if (cBale.checked) {
+		document.getElementById('valorcBale').value = "1"; 	
+		qtd = qtd + 1;		
+    } else { 
+		document.getElementById('valorcBale').value = "0"; 	
+	}	
+
+
+tot = qtd * 50;
+
+
+document.getElementById('total').value = tot; 	
+document.getElementById('cTot').value = tot; 
+
+
+}
+
+// Função do CEP 
+
+// Função do CEP 
+
+	function limpa_formulário_cep() {
+            //Limpa valores do formulário de cep.
+            document.getElementById('tRua').value=("");
+            document.getElementById('tBar').value=("");
+            document.getElementById('tCid').value=("");
+            document.getElementById('uf').value=("");
+            document.getElementById('ibge').value=("");
+    }
+
+    function meu_callback(conteudo) {
+        if (!("erro" in conteudo)) {
+            //Atualiza os campos com os valores.
+            document.getElementById('tRua').value=(conteudo.logradouro);
+            document.getElementById('tBar').value=(conteudo.bairro);
+            document.getElementById('tCid').value=(conteudo.localidade);
+            document.getElementById('uf').value=(conteudo.uf);
+            document.getElementById('ibge').value=(conteudo.ibge);
+        } //end if.
+        else {
+            //CEP não Encontrado.
+            limpa_formulário_cep();
+            alert("CEP não encontrado.");
+        }
+    }
+        
+    function pesquisacep(valor) {
+
+        //Nova variável "cep" somente com dígitos.
+        var cep = valor.replace(/\D/g, '');
+
+        //Verifica se campo cep possui valor informado.
+        if (cep != "") {
+
+            //Expressão regular para validar o CEP.
+            var validacep = /^[0-9]{8}$/;
+
+            //Valida o formato do CEP.
+            if(validacep.test(cep)) {
+
+                //Preenche os campos com "..." enquanto consulta webservice.
+                document.getElementById('tRua').value="...";
+                document.getElementById('tBar').value="...";
+                document.getElementById('tCid').value="...";
+                document.getElementById('uf').value="...";
+                document.getElementById('ibge').value="...";
+
+                //Cria um elemento javascript.
+                var script = document.createElement('script');
+
+                //Sincroniza com o callback.
+                script.src = 'https://viacep.com.br/ws/'+ cep + '/json/?callback=meu_callback';
+
+                //Insere script no documento e carrega o conteúdo.
+                document.body.appendChild(script);
+
+            } //end if.
+            else {
+                //cep é inválido.
+                limpa_formulário_cep();
+                alert("Formato de CEP inválido.");
+            }
+        } //end if.
+        else {
+            //cep sem valor, limpa formulário.
+            limpa_formulário_cep();
+        }
+    }
+
+</script>
+</head>
+<body>
+<h1>Ficha De Inscrição</h1>
+
+
+<form name="frmprojeto" method="post" action="gravar.php"  >
+
+<fieldset id="usuario"><legend>Identificação do Cliente</legend>
+    <p><label for="cNome">Nome:<input type="text" name="tNome" id= "cNome" size="35" maxlength="35" placeholder="Nome Completo"/></label></p>
+	
+    <p><label for="cCpf">CPF:<input type="cpf" name="tCpf" id= "cCpf" size="11" maxlength="11"</label></p>
+	
+	<p><label for="rg">RG: <input type="rg" name="tRg" id="cRg" size="11" maxlength="11" /></label></p></div><p>
+	
+    <p><label for="cMail">E-mail:<input type="email" name="tMail" id= "cMail" size="35" maxlength="40"</label></p>
+	
+    <legend>Sexo:</legend>
+        <p class="sexo"><input type="radio" name="sexo"id= "cMasc" value="M" checked="checked"   /> <label for="cMasc">Masculino</label>
+		
+        <input type="radio" name="sexo" id= "cFem" value="F"/> <label for="cFem">Feminino</label></p>
+		
+    <p><label for="cData">Data de Nascimento:<input type="date" name="tData"id= "cData"/></label></p>
+	
+</fieldset>
+
+<fieldset id="endereco"><legend>Endereço do Cliente</legend>
+   <p><label for="tCep">CEP:<input type="cep" name="tCep" id="tCep" value="" size="9" maxlength="9" onblur="pesquisacep(this.value);" /></label></p>
+ 
+   		<p><label for="tRua">Logradouro: <input type="text" name="tRua" id= "tRua" size="40" maxlength="40"  placeholder="Rua"/></label></p>
+		
+		 <p><label for="cNum">Número:<input type="number" name="tNum" id= "cNum" min="0" max="1000" placeholder="N° Casa"></label></p>
+		
+        <p><label for="tBar">Bairro: <input type="text" name="tBar" id="tBar" size="40" maxlength="40"placeholder="Nome do Bairro" /></label><br /><p>
+        
+		<p><label for="tCid">Cidade:</label><input type="text" name="tCid" id= "tCid" size="40" maxlength="40"  placeholder="Sua Cidade"/></label></p>
+		
+        <p><label for="tEst">Estado: <input name="uf" type="text" id="uf" size="2"/></label><p>
+        <label>IBGE:
+        <input name="ibge" type="text" id="ibge" size="8" /></label><br />
+</fieldset>
+
+<fieldset id="fazer"> <legend>O Que Você Deseja Fazer?</legend>
+
+<p><input type="checkbox" name="aula[]" id="cTkd" value="Taekwondo" onclick="return totalizar()" /><label for="cTkd">Taekwondo</label></p>
+<p><input type="checkbox" name="aula[]" id="cJiu" value="Jiu-Jitsu" onclick="return totalizar()" /><label for="cJiu">Jiu-Jitsu</p>
+<p><input type="checkbox" name="aula[]" id="cMus" value="Musculação" onclick="return totalizar()" /><label for="cMus">Musculação</label></p>
+<p><input type="checkbox" name="aula[]" id="cPil" value="Pilates" onclick="return totalizar()" /><label for="cPil">Pilates</label></p>
+<p><input type="checkbox" name="aula[]" id="cZum" value="Zumba" onclick="return totalizar()" /><label for="cZum">Zumba</label></p>
+<p><input type="checkbox" name="aula[]" id="cBale" value="Balé" onclick="return totalizar()" /><label for="cBale">Balé</label></p>
+
+<input type="hidden" id="valorcTkd" name="valorcTkd" value="">
+<input type="hidden" id="valorcJiu" name="valorcJiu" value="">
+<input type="hidden" id="valorcMus" name="valorcMus" value="">
+<input type="hidden" id="valorcPil" name="valorcPil" value="">
+<input type="hidden" id="valorcZum" name="valorcZum" value="">
+<input type="hidden" id="valorcBale" name="valorcBale" value="">
+
+<input type="hidden" id="total" name="total" value="0">
+
+<p><label for ="cTot"> Preço R$</label>
+<input type="text" name="tTot" id= "cTot" placeholder="Total a Pagar" readonly/>
+</p>
+
+</fieldset>
+
+<fieldset id="mensagem"><legend>Possui Algum Problema De Saúde?</legend>
+
+<p class="saude">
+<label>
+<input type="radio" name="saude" value="N" checked="checked" />NÃO
+</label>
+<label>
+<input type="radio" name="saude" value="S" />SIM
+</label>			
+</p>	
+			
+
+
+
+    <p>Espercifique:</p>
+    <p><label for="cMsg">Mensagem:</label>
+<textarea name="tMsg" id=Msg cols="45" rows="5" placeholder=" Caso a Resposta Seja SIM Espercifique aqui"/></textarea></p>
+<!--<button type="submit">Enviar sua mensagem</button>-->
+</fieldset>
+
+<input type="image" onclick="return validar()" src="_imagens/botao-enviar.png"/>
+
+</form>
+
+</body>
+</html>
